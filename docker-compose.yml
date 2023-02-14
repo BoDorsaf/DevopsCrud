@@ -19,11 +19,6 @@ services:
                 depends_on:
                         - mysql-standalone
                 environment:
-                        #MYSQL_HOST=my-db
-                        #MYSQL_USERNAME=admin
-                        #MYSQL_PASSWORD=password
-                        #MYSQL_DATABASE=achatdb
-                        #MYSQL_PORT=3306
                         SPRING_DATASOURCE_URL: jdbc:mysql://172.10.0.140:3306/achatdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
                         SPRING_DATASOURCE_USERNAME: "dorsaf"
                         SPRING_DATASOURCE_PASSWORD: "password"
