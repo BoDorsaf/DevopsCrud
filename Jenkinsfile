@@ -82,20 +82,11 @@ pipeline{
 
      
 
-            emailext (
+            emailext   to: "dorsaf.belouja@esprit.tn",
+			subject: "jenkins build:${currentBuild.currentResult}: ${env.JOB_NAME}",
+     			body: "${currentBuild.currentResult}: Job ${env.JOB_NAME}\nMore Info can be found here: ${env.BUILD_URL}"
 
-                    to: "dorsafbelouja@gmail.com",
-
-                    replyTo: "dorsafbelouja@gmail.com",
-
-                    subject: "BuildResult ${currentBuild.currentResult}",
-
-                    mimeType: 'text/html',
-
-                    body: "Hello, DEVOPS"
-
-            )
-
+            
         }
 
     }
