@@ -15,7 +15,7 @@ services:
                 container_name: spring-boot-docker-container
                 image: dora12334/bdrepo
                 ports:
-                        - '8082:8082'
+                        - '8089:8089'
                 depends_on:
                         - mysql-standalone
                 environment:
