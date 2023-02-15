@@ -13,7 +13,7 @@ services:
                 build:
                         context: .
                 container_name: spring-boot-docker-container
-                image: dora12334/bdrepo
+                image: dora12334/bdrepo:latest
                 ports:
                         - '8089:8089'
                 depends_on:
