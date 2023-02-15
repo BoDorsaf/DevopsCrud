@@ -1,5 +1,13 @@
-version: '2'
+version: '3.7'
 services:
+        sonarqube:
+                image: sonarqube:8.9.7-community
+                 ports:
+                  - "9092:9092"
+        nexus:
+                 image: sonatype/nexus3
+                 ports:
+                  - "8082:8082"
         mysql-standalone:
                 image: 'mysql:5.6'
                 environment:
