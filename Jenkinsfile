@@ -34,7 +34,7 @@ pipeline{
         }
          stage('SonarQube') {
             steps {
-                sh"mvn package -B -DskipTests sonar:sonar -Dsonar.host.url=http:172.10.0.140:9000  -Dsonar.login=2985e0b00cd9a1414343b0cda1d28e4d2d95a0f1"
+                sh"mvn package -B -DskipTests admin:dora -Dsonar.host.url=http:172.10.0.140:9000  -Dsonar.login=2985e0b00cd9a1414343b0cda1d28e4d2d95a0f1"
             }
         }
         stage('NEXUS') {
